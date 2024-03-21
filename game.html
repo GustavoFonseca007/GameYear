@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess the year</title>
+    <link rel="stylesheet" href="game.css">
+</head>
+
+<body>
+
+    <div id="game">
+        <br>
+        <div id="imageContainer">
+            <img id="image" src="" alt="Imagem do jogo">
+
+            <div id="zoomIcons">
+                <span id="zoomInIcon">+</span>
+                <span id="zoomOutIcon">-</span>
+            </div>
+        </div>
+        <br>
+        <div id="score">Score: 0</div>
+        <br>
+        <div id="round">Round: 1/5</div>
+        <br>
+
+        
+        <div id="scoreRoundReset">
+          
+            <button id="reset">Reset</button>
+        </div>
+    </div>
+
+    <div style="margin-top: 150px;"> 
+        <div id="rulerSection">
+            <div class="ruler" id="ruler">
+                <div class="marker" id="marker"></div>
+                
+            </div>
+        </div>
+
+        <div id="years" style="display: none;">Years</div> 
+    </div>
+
+    <script src="game.js"></script>
+
+</body>
+
+</html>

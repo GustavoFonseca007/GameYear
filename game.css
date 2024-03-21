@@ -1,0 +1,112 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+    overflow-y: scroll; 
+}
+
+
+.ruler {
+    position: relative;
+    width: 1000px;
+    height: 100px;
+    border-top: 2px solid black;
+    overflow: visible;
+}
+
+.marker {
+    position: absolute;
+    width: 2px;
+    height: 20px;
+    background-color: red;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    pointer-events: none; 
+}
+
+.year {
+    position: absolute;
+    bottom: -20px;
+    transform: translateX(-50%);
+}
+
+.majorTick {
+    position: absolute;
+    width: 2px;
+    height: 10px;
+    background-color: black;
+    top: 0;
+    transform: translateY(100%);
+}
+
+.minorTick {
+    position: absolute;
+    width: 1px;
+    height: 5px;
+    background-color: rgb(34, 0, 204);
+    top: 0;
+    transform: translateY(100%);
+}
+
+#game {
+    position: absolute;
+    top: 20%;  
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+
+#image {
+    width: 200px;
+    height: 200px;
+    object-fit: co;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+#imageContainer {
+    position: relative;
+    width: fit-content; 
+    margin: 0 auto; 
+    display: inline-block;
+    overflow: hidden; 
+}
+
+
+#zoomIcons {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    z-index: 1; 
+}
+
+#zoomIcons span {
+    cursor: pointer;
+    font-size: 30px; 
+    margin: 0 10px; 
+    font-weight: bold; 
+    color: #ff0000; 
+}
+#reset {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#reset:hover {
+    background-color: #45a049;
+}
